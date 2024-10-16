@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Introducción a JS</title>
+
+</head>
+
+<body>
+
+    <h1>Introducción a Java Script</h1>
+
+    <script>
+
+        alert("Hola Mundo"); //Mensaje de alerta
+        document.write("Hola Mundo"); //Lo que se ve en el docuemnto 
+        console.log("Hola Mundo"); //se ve solo en console de pagina
+
+        //Variable JS 
+        var nombre = "Martin"; //informacion que se ve en console
+        alert(nombre); //mensaje de alerta
+        var edad = 20; //informacion que se ve en console
+        console.log("El nombre del estudiante es: ", nombre, "Y tiene", edad, "años"); //Se concatena la info para ser mostrada en console
+        var apellido = prompt("Ingrese el apellido del estudiante");//variable guarda la informacion segun lo ingresado
+       
+        //Tipo de variables
+        //Numéricas
+        var edad1=20;
+        //String
+        var direccion="Puengasi";
+        //Arreglo
+        var amigos=["Adrian","Alan","Cris","Maikol mmvrg","Anderson"];
+        //Boleano
+        var boleano=false;
+        //Undefine
+        var ejemplo;
+        //Null
+        var numero2=10;
+        var numero2=null;
+        //nan
+        var texto2="Hola como estas?";
+        console.log(texto2*2);
+        
+        //Arreglos
+        var amigos2=["Adriel","Edison el pancho","Messi"];
+        console.log(amigos2[0]);
+
+        //Editar un dato del arreglo
+        amigos2[1]="Alan";
+        console.log(amigos2);
+
+        //Vamos a obtener el tamaño de mi arreglo
+        console.log("Tienes", amigos2.length, "amigos");
+
+        //Vamos a añadir un elemento al final de mi arreglo
+        amigos2[amigos2.length]="Rony"; //Agregar uno
+        console.log(amigos2);
+
+        //Añadimos varios elementos al arreglo
+        amigos2.push("Alexis", "Neymar", "Gabriel"); //Agregar varios
+        console.log(amigos2);
+
+        //Eliminar el ultimo dato del arreglo
+        amigos2.pop();
+        console.log(amigos2);
+
+        //Concatenar arreglos
+        var amigos3 = amigos.concat(amigos2); //Seleccionamos union de arreglos
+        console.log(amigos3);
+
+        //Operadores matemáticos
+        /*suma +,
+        resta -,
+        division/,
+        multiplicacion *,
+        modulo % */ //* resto de una division//
+
+        var a=5;
+        var b=2;
+        var suma=a+b;;
+        console.log("La suma de dos elementos", suma);
+
+        //Math
+        var c=9;
+        var d=Math.sqrt(c);
+        console.log("La raiz es", d);
+
+        //Condicionales
+        ///Operadores lógicos
+        //&& AND
+        //|| or
+        if(d>5){
+            console.log("El vlor es exacto");
+        }else{
+            console.log("El valor es exacto");
+        }
+
+        
+    </script>
+
+</body>
+
+</html>
